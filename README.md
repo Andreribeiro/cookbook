@@ -1,8 +1,5 @@
 # Grupo
-- 123456 David Martinho
-- 123456 David Martinho
-- 123456 David Martinho
-- 123456 David Martinho
+- 21105471 André Ribeiro
 
 ## Changelog
 #### Versão 1.0:
