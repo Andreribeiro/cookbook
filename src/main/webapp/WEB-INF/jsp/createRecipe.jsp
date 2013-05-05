@@ -109,8 +109,14 @@
 	Solução: <textarea maxlenght="4" input type="text" name="solucao"/></textarea></h4><br/><br>
 	<a class="btn btn-medium btn-warning" href="/recipes"><font><input type="submit" value="Criar Nova Receita"/></font></a>
 	
+	<br>
+	<br>
+	<br>
 	
-	</form>
+	<input type="button" value="Voltar" onClick="history.go(-1)">
+	
+	
+
 
       <hr>
 
