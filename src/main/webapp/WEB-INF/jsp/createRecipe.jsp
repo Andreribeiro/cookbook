@@ -107,14 +107,12 @@
 	Título: <input type="text" name="titulo" /><br/><br>
 	Problema: <input type="text" name="problema"/><br/><br>
 	Solução: <textarea maxlenght="4" input type="text" name="solucao"/></textarea></h4><br/><br>
-	<a class="btn btn-medium btn-warning" href="/recipes"><font><input type="submit" value="Criar Nova Receita"/></font></a>
-	
+	<button class="btn btn-medium btn-warning" href="/recipes" type="submit" >Criar Nova Receita</button>
 	<br>
 	<br>
 	<br>
 	
 	<input type="button" value="Voltar" onClick="history.go(-1)">
-	
 	
 
 

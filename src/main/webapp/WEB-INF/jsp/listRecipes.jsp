@@ -80,9 +80,7 @@
 
   <body>
   
-	<c:forEach var="recipe" items='${recipes}'>
-	<a href="/recipes/${recipe.id}">${recipe.titulo}</a><br>
-	 </c:forEach>
+	
 	 
       <div class="container">
       <div class="masthead">
@@ -97,12 +95,18 @@
                 <li><a href="http://twitter.github.io/bootstrap/examples/justified-nav.html#"><font><font>Serviços</font></font></a></li>
                 <li><a href="http://twitter.github.io/bootstrap/examples/justified-nav.html#"><font><font>Transferências</font></font></a></li>
                 <li><a href="/contact"><font><font>Contato</font></font></a></li>
-              </ul>
-            </div>
+              </ul>      
+            </div>              
           </div>
-        </div><!-- /.navbar -->
-      </div>
+        </div><!-- /.navbar --> 
+        
+        <c:forEach var="recipe" items='${recipes}'>
+		<a href="/recipes/${recipe.id}">${recipe.titulo}</a><br>
+		</c:forEach>
+      	</div>
+      
 	
+	 
       <hr>
 
       <div class="footer">
