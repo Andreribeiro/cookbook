@@ -3,7 +3,7 @@
 <!-- saved from url=(0062)http://twitter.github.io/bootstrap/examples/justified-nav.html -->
 <html lang="en" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>Template · Bootstrap</title>
+    <title>CriarReceitas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">

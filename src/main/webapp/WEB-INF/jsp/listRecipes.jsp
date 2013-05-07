@@ -4,7 +4,7 @@
 <!-- saved from url=(0062)http://twitter.github.io/bootstrap/examples/justified-nav.html -->
 <html lang="en" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>Template · Bootstrap</title>
+    <title>ListarReceitas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -99,18 +99,21 @@
           </div>
         </div><!-- /.navbar --> 
         
-        <br>
+       	<p align="right">
+        <form class="form-search">
+        <button type="submit" class="btn" style="float: right;">Procurar</button>
+ 		<input type="text" class="input-medium search-query" style="float: right;">
+		</form>
+       	</p>
+       	
+       	<br><br>
         
-        <h4><span style="color:orange"><u>Lista de Receitas</u></span></h4>
-      
-        <br>
-        <br>
+        <h4><span style="color:orange"><u>Lista de Receitas</u></span></h4><br>
+
         <c:forEach var="recipe" items='${recipes}'>
 		<h4><a href="/recipes/${recipe.id}">${recipe.titulo}</a></h4><br>
 		</c:forEach>
-      	</div>
-  
-	 
+      	
       <hr>
 
       <div class="footer">
