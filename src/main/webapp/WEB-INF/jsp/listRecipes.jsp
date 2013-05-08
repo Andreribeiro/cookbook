@@ -108,11 +108,35 @@
        	
        	<br><br>
         
-        <h4><span style="color:orange"><u>Lista de Receitas</u></span></h4><br>
-
-        <c:forEach var="recipe" items='${recipes}'>
+        
+        
+        
+        <table class="table">
+        
+ 		 <caption><h4><span style="color:orange"><u>Lista de Receitas</u></span></h4><br></ caption>
+  		
+  		<thead>
+  		
+   		 <tr> 
+   		  		 
+    	  <th> <h4><span style="color:orange">Título</span></h4> </ th>
+    	 
+   		</ tr>
+ 		 </ thead>
+ 		 <tbody>
+ 		  <tr>
+    	  <td> 
+    	  
+    	  <c:forEach var="recipe" items='${recipes}'>
 		<h4><a href="/recipes/${recipe.id}">${recipe.titulo}</a></h4><br>
-		</c:forEach>
+		</c:forEach> 
+		
+		</ td>
+    	  
+    	</ tr>
+ 		</ tbody>
+		</ table>
+
       	
       <hr>
 
