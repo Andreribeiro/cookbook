@@ -91,8 +91,8 @@
               	<li><a href="localhost:8080"><font><font>Home</font></font></a></li>
                 <li><a href="/recipes/create"><font><font>Criar Nova</font></font></a></li>
                 <li class="active"><a href="/recipes/"><font><font>Listar Receitas</font></font></a></li>
-                <li><a href="http://twitter.github.io/bootstrap/examples/justified-nav.html#"><font><font>Serviços</font></font></a></li>
-                <li><a href="http://twitter.github.io/bootstrap/examples/justified-nav.html#"><font><font>Transferências</font></font></a></li>
+                <li><a href=""><font><font>Serviços</font></font></a></li>
+                <li><a href=""><font><font>Transferências</font></font></a></li>
                 <li><a href="/contact"><font><font>Contato</font></font></a></li>
               </ul>      
             </div>              

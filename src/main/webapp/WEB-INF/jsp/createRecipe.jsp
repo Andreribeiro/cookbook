@@ -90,8 +90,8 @@
               	<li><a href="localhost:8080"><font><font>Home</font></font></a></li>
                 <li class="active"><a href="/recipes/create"><font><font>Criar Nova</font></font></a></li>
                 <li><a href="/recipes"><font><font>Listar Receitas</font></font></a></li>
-                <li><a href="http://twitter.github.io/bootstrap/examples/justified-nav.html#"><font><font>Serviços</font></font></a></li>
-                <li><a href="http://twitter.github.io/bootstrap/examples/justified-nav.html#"><font><font>Transferências</font></font></a></li>
+                <li><a href=""><font><font>Serviços</font></font></a></li>
+                <li><a href=""><font><font>Transferências</font></font></a></li>
                 <li><a href="/contact"><font><font>Contato</font></font></a></li>
               </ul>
             </div>
@@ -103,9 +103,13 @@
 	
 	<br>
 	
+	<h4><span style="color:orange"><u>Nova Receita</u></span></h4><br>
+	
+	<br>
+	
 	<h4>
-	Título: <input type="text" name="titulo" /><br/><br>
-	Problema: <input type="text" name="problema"/><br/><br>
+	Título: <textarea maxlenght="4" input type="text" name="titulo"/></textarea><br/><br>
+	Problema: <textarea maxlenght="4" input type="text" name="problema"/></textarea><br/><br>
 	Solução: <textarea maxlenght="4" input type="text" name="solucao"/></textarea></h4><br/><br>
 	<button class="btn btn-medium btn-warning" href="/recipes" type="submit" >Criar Nova Receita</button>
 	<br>
