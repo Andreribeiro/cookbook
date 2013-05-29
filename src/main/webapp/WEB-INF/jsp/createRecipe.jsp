@@ -108,9 +108,9 @@
 	<br>
 	
 	<h4>
-	Título: <textarea maxlenght="4" input type="text" name="titulo"/></textarea><br/><br>
-	Problema: <textarea maxlenght="4" input type="text" name="problema"/></textarea><br/><br>
-	Solução: <textarea maxlenght="4" input type="text" name="solucao"/></textarea></h4><br/><br>
+	Título: <textarea maxlenght="4" input type="text" name="title"/></textarea><br/><br>
+	Problema: <textarea maxlenght="4" input type="text" name="problem"/></textarea><br/><br>
+	Solução: <textarea maxlenght="4" input type="text" name="solution"/></textarea></h4><br/><br>
 	<button class="btn btn-medium btn-warning" href="/recipes" type="submit" >Criar Nova Receita</button>
 	<br>
 	<br>

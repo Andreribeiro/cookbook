@@ -128,7 +128,7 @@
     	  <td> 
     	  
     	  <c:forEach var="recipe" items='${recipes}'>
-		<h4><a href="/recipes/${recipe.id}">${recipe.titulo}</a></h4><br>
+		<h4><a href="/recipes/${recipe.externalId}">${recipe.titulo}</a></h4><br>
 		</c:forEach> 
 		
 		</ td>

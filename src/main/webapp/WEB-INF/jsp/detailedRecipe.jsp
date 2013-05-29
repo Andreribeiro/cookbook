@@ -102,11 +102,11 @@
 	<h4><u>Receita introduzida com sucesso!</u></h4>
 	<br>
 	<br>
-		<span style="color:orange"><h1>${recipe.titulo}</h1><br></span>
+		<span style="color:orange"><h1>${recipe.title}</h1><br></span>
 			<h4><u><b>Problema:</b></u>
-			<p>${recipe.problema}</p><br>
+			<p>${recipe.problem}</p><br>
 			<u><b>Solução:</b></u>
-			<p>${recipe.solucao}</p></h4>
+			<p>${recipe.solution}</p></h4>
 	<br>
 	<br>
 	<br>

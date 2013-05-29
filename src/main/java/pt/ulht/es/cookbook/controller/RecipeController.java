@@ -2,6 +2,7 @@ package pt.ulht.es.cookbook.controller;
 
 import java.util.Collection;
 import java.util.Map;
+import java.util.Set;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import pt.ist.fenixframework.pstm.AbstractDomainObject;
 import pt.ulht.es.cookbook.domain.CookbookManager;
 import pt.ulht.es.cookbook.domain.Recipe;
 
@@ -18,7 +20,7 @@ public class RecipeController {
 
 	@RequestMapping(method=RequestMethod.GET, value="/recipes")
 	public String listRecipes(Model model) {
-		Collection<Recipe> recipes = CookbookManager.getRecipes();
+		Set<Recipe> recipes = CookbookManager.getInstance().getRecipeSet(); 
 		model.addAttribute("recipes", recipes);
 		return "listRecipes";
 	}
@@ -30,19 +32,20 @@ public class RecipeController {
 
 	@RequestMapping(method=RequestMethod.POST, value="/recipes")
 	public String createRecipe(@RequestParam Map<String,String> params){
-		String titulo = params.get("titulo");
-		String problema = params.get("problema");
-		String solucao = params.get("solucao");
+		String title = params.get("title");
+		String problem = params.get("problem");
+		String solution = params.get("solution");
+		String author = params.get("author");
 
-		Recipe recipe= new Recipe(titulo, problema, solucao);
-		CookbookManager.saveRecipe(recipe);
+		Recipe recipe= new Recipe(title, problem, solution, author);
+		
 
-		return "redirect:/recipes/"+recipe.getId(); 
+		return "redirect:/recipes/"+recipe.getExternalId(); 
 	}
 
 	@RequestMapping(method=RequestMethod.GET, value="/recipes/{id}")
 	public String showRecipe(Model model, @PathVariable String id) {
-		Recipe recipe = CookbookManager.getRecipe(id);
+		Recipe recipe = AbstractDomainObject.fromExternalId(id);
 		if(recipe != null){
 			model.addAttribute("recipe", recipe);
 			return "detailedRecipe";
