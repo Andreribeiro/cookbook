@@ -1,6 +1,9 @@
 package pt.ulht.es.cookbook.controller;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Collection;
+import java.util.Date;
 import java.util.Map;
 import java.util.Set;
 
@@ -32,12 +35,23 @@ public class RecipeController {
 
 	@RequestMapping(method=RequestMethod.POST, value="/recipes")
 	public String createRecipe(@RequestParam Map<String,String> params){
+		
+		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		Date current_date = new Date();
+		
 		String title = params.get("title");
 		String problem = params.get("problem");
 		String solution = params.get("solution");
 		String author = params.get("author");
-
-		Recipe recipe= new Recipe(title, problem, solution, author);
+		String classification = params.get("classification");
+		String tag = params.get("tag");
+		
+		
+		
+		String data = dateFormat.format(current_date);
+		
+		
+		Recipe recipe= new Recipe(title, problem, solution, author, classification, tag, data);
 		
 
 		return "redirect:/recipes/"+recipe.getExternalId(); 

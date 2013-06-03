@@ -113,7 +113,7 @@
           <div class="navbar-inner">
             <div class="container">
               <ul class="nav">
-                <li class="active"><a href="localhost:8080"><font><font>Home</font></font></a></li>
+                <li class="active"><a href="/"><font><font>Home</font></font></a></li>
                 <li><a href="/recipes/create"><font><font>Criar Nova</font></font></a></li>
                 <li><a href="/recipes"><font><font>Listar Receitas</font></font></a></li>
                 <li><a href=""><font><font>Serviços</font></font></a></li>
